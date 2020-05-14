@@ -127,6 +127,7 @@ border: none;
     z-index: 2;
     text-align: center;
     top: -100vh;
+    list-style-type: none;
 }
 
 .dropdown a {
@@ -204,7 +205,22 @@ a:visited {
     padding-left: 10%;
 }
 
-.content {
+.recipeContent {
+    display: none;
+}
+
+.showRecipe{
+    display: block;
+    position: relative;
+    padding-top: 100px;
+    height: calc(100vh - 100px);
+    margin: 0;
+    text-align: center;
+}
+.showIndex {
+    display: block;
+}
+#foodIndex {
     position: relative;
     padding-top: 100px;
     height: calc(100vh - 100px);
@@ -212,12 +228,10 @@ a:visited {
     text-align: center;
 }
 
-
-.content1 {
-    position: relative;
-    background: rgba(128, 128, 128, 0.5);
-    height: 33.333%;
+.hideIndex {
+    display: none;
 }
+
 
 .content-heading{
     padding: 10%;
@@ -257,6 +271,11 @@ a:visited {
 }
 
 #recipe li{
-list-style-type: disc;
+list-style-type: disc; 
+list-style-position: inside;
 background-color: rgb(134, 131, 131);
 }
+
+#method li{
+    list-style-position: inside;
+    }
