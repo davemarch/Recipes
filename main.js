@@ -25,17 +25,49 @@ Method: ["Fry"]
 Picture: "https://www.recipetineats.com/wp-content/uploads/2019/02/Pesto-Pasta_2-1.jpg?resize=650,910",
 Food: "Pesto Pasta",
 Recipe: ["Chicken", "Pesto", "Pasta", "Olive Oil"],
-Method: ["Boil Pasta", "Fry Chicken", "Combine with Pesto"]
+Method: ["Boil Pasta", "Fry Chicken", "Combine"]
 }      ,
 {
 Picture: "https://www.lecremedelacrumb.com/wp-content/uploads/2017/09/pasta-e-fagioli-107.jpg",
 Food: "Pasta E Fagoli",
 Recipe: ["1 Tbs of Extra Virgin Olive Oil","2 Whole Carrots","4 Celery Stalks","1 Onion","2 cans of chopped tomatoes","2 measures veg stock", "2 bay leaves", "1 tsp dried oregano", "tsp dried basil", "1/2 tsp dried thyme", "1 can of cannellini beans", "1 can of red kidney beans", "1 cup of pasta"],
-Method: ["1. Put all ingredients in slowcooker except beans and pasta", "2. Cook on low for 7-8 hours or high for 3-4", "3. 30 mins before serving add pasta and beans"]}
+Method: ["1. Put all ingredients in slowcooker except beans and pasta", "2. Cook on low for 7-8 hours or high for 3-4", "3. 30 mins before serving add pasta and beans"]},
+
+{
+  Picture: "https://144f2a3a2f948f23fc61-ca525f0a2beaec3e91ca498facd51f15.ssl.cf3.rackcdn.com/uploads/food_portal_data/recipes/recipe/hero_article_image/71/527501179e9319cf888f/letterbox_Summer_20paella.jpg",
+  Food: "Paella",
+  Recipe: ["2 Garlic Cloves","Chorizo Substitute","6 x Spring Onions or 1 x Onions","200g of Paella Rice","1 x Red Pepper","100g of Frozen Peas", "Fresh Tomatoes", "1 tsp paprika", "1 tsp tumeric", "650 ml of veg stock"],
+  Method: ["1. Fry the garlic and chorizo", "2. Add onions, tumeric, rice and red pepper - For 2-3 minutes until rice is opaque", "3. Add the stock and simmer for 10 minutes", "4. Add peas and tomatoes and simmer for another 10 minutes."]}
 ]
     ;
 
-const randomNumber = (Math.floor(Math.random() * myArray.length));
+function init(){
+
+document.getElementById('picture').src = '';
+document.getElementById('food').textContent = '';
+    
+
+  var ul = document.getElementById("recipe");
+  var listLength = ul.children.length;
+
+  for (i = 0; i < listLength; i++) {
+    ul.removeChild(ul.children[0]);
+}
+
+  var ul = document.getElementById("method");
+  var listLength = ul.children.length;
+
+  for (i = 0; i < listLength; i++) {
+    ul.removeChild(ul.children[0]);
+}
+
+};
+
+function getRandomRecipe(){
+
+  init();
+
+ const randomNumber = (Math.floor(Math.random() * myArray.length));
 
 let ingredientsArrayLength = myArray[randomNumber].Recipe.length;
 
@@ -57,14 +89,11 @@ for (var i = 0; i < methodArrayLength; i++) {
 
 const getPicture = myArray[randomNumber].Picture;
 const getFood = myArray[randomNumber].Food;
-const getRecipe = myArray[randomNumber].Recipe;
-const getMethod = myArray[randomNumber].Method;
-
-
 
 document.getElementById('picture').src = getPicture;
 document.getElementById('food').textContent = "You have randomly selected - " + getFood;
-// document.getElementById('method').textContent = "Method - " + getMethod;
+    
+}
 
 
 
