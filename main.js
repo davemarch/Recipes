@@ -116,7 +116,7 @@ const getPicture = myArray[randomNumber].Picture;
 const getFood = myArray[randomNumber].Food;
 
 document.getElementById('picture').src = getPicture;
-document.getElementById('food').textContent = "You have selected - " + getFood;
+document.getElementById('food').textContent = "You have randomly selected - " + getFood;
   
 };
 
