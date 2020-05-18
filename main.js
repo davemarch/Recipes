@@ -21,10 +21,29 @@ Method: ["1. Put all ingredients in slowcooker except beans and pasta", "2. Cook
 Picture: "https://144f2a3a2f948f23fc61-ca525f0a2beaec3e91ca498facd51f15.ssl.cf3.rackcdn.com/uploads/food_portal_data/recipes/recipe/hero_article_image/71/527501179e9319cf888f/letterbox_Summer_20paella.jpg",
 Food: "Paella",
 Recipe: ["2 Garlic Cloves","Chorizo Substitute","6 x Spring Onions or 1 x Onions","200g of Paella Rice","1 x Red Pepper","100g of Frozen Peas", "Fresh Tomatoes", "1 tsp paprika", "1 tsp tumeric", "650 ml of veg stock"],
-Method: ["1. Fry the garlic and chorizo", "2. Add onions, tumeric, rice and red pepper - For 2-3 minutes until rice is opaque", "3. Add the stock and simmer for 10 minutes", "4. Add peas and tomatoes and simmer for another 10 minutes."]}
+Method: ["Fry the garlic and chorizo", "Add onions, tumeric, rice and red pepper - For 2-3 minutes until rice is opaque", "Add the stock and simmer for 10 minutes", "Add peas and tomatoes and simmer for another 10 minutes."]
+}
+,
+{
+  Picture: "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/user-collections/my-colelction-image/2015/12/recipe-image-legacy-id--901451_9.jpg",
+  Food: "Yorkshire Puddings",
+  Recipe: ["140g - Plain Flour", "4x Eggs", "200ml - Milk", "Sunflour Oil"],
+  Method: ["Oven at 210C Fan", "", "",]
+  }
+,
+{
+  Picture: "https://keviniscooking.com/wp-content/uploads/2017/10/Turkish-Spice-Blend1.jpg",
+  Food: "Montreal Steak Spice Blend",
+  Recipe: ["2 Tbsp - Sea Salt", "2 Tbps - Black Peppercorns", "1 tsp - Caraway Seeds", "1 tsp - Coriander Seeds", "1 tsp - Cumin Seeds", "1 tsp - Fennel Seeds", " 1 tsp - Celery Seeds" ],
+  Method: ["Blend together, one at a time to get consistency", "Add celery seeds at the end"]
+  }
+
 ]
   ;
 
+let welcomeMessage = () => {
+  alert("Hello Bug!")
+}
 
 
 let dropdownActive = () => {

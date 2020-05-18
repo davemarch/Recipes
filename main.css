@@ -213,7 +213,7 @@ a:visited {
     display: block;
     position: relative;
     padding-top: 100px;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
     margin: 0;
     text-align: center;
 }

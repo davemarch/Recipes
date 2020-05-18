@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body onload="welcomeMessage()">
     <div class="container">
         <div class="header">
             <h1 class="heading-text">Recipes</h1>
@@ -33,7 +33,7 @@
 
         <div class="recipeContent" id="recipeContent">
                     <h1 id='food'></h1>
-                    <img id=picture alt="" height="400" width="400">
+                    <img id=picture alt="" height="auto" width="100%">
                     <ul id='recipe'></ul>
                     <ol id='method'></ol>
         </div>
