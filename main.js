@@ -93,7 +93,7 @@ function getRandomRecipe(){
 
   init();
 
-  const randomNumber = (Math.floor(Math.random() * myArray.length));
+const randomNumber = (Math.floor(Math.random() * myArray.length));
 let ingredientsArrayLength = myArray[randomNumber].Recipe.length;
 
 for (var i = 0; i < ingredientsArrayLength; i++) {
@@ -102,7 +102,6 @@ for (var i = 0; i < ingredientsArrayLength; i++) {
   li.appendChild(document.createTextNode(myArray[randomNumber].Recipe[i]));
   ul.appendChild(li);
 }
-
 
 let methodArrayLength = myArray[randomNumber].Method.length;
 
@@ -113,17 +112,48 @@ for (var i = 0; i < methodArrayLength; i++) {
   ul.appendChild(li);
 }
 
+const getPicture = myArray[randomNumber].Picture;
+const getFood = myArray[randomNumber].Food;
 
+document.getElementById('picture').src = getPicture;
+document.getElementById('food').textContent = "You have selected - " + getFood;
+  
+};
+
+function getClickedRecipe(randomNumber){
+
+  init();
+
+  let ingredientsArrayLength = myArray[randomNumber].Recipe.length;
+
+for (var i = 0; i < ingredientsArrayLength; i++) {
+  var ul = document.getElementById("recipe");
+  let li = document.createElement("li");
+  li.appendChild(document.createTextNode(myArray[randomNumber].Recipe[i]));
+  ul.appendChild(li);
+}
+
+let methodArrayLength = myArray[randomNumber].Method.length;
+
+for (var i = 0; i < methodArrayLength; i++) {
+  var ul = document.getElementById("method");
+  let li = document.createElement("li");
+  li.appendChild(document.createTextNode(myArray[randomNumber].Method[i]));
+  ul.appendChild(li);
+}
 
 const getPicture = myArray[randomNumber].Picture;
 const getFood = myArray[randomNumber].Food;
 
 document.getElementById('picture').src = getPicture;
-document.getElementById('food').textContent = "You have randomly selected - " + getFood;
-    
-console.log('this work?');
+document.getElementById('food').textContent = "You have selected - " + getFood + " from the index";
+  
+};
 
-}
+
+
+
+
 
 let recipeActive = () => {
   let recipe = document.getElementById("recipeContent");
@@ -142,13 +172,14 @@ function loadIndex() {
     let li = document.createElement("li");
     li.appendChild(document.createTextNode(myArray[i].Food));
     ul.appendChild(li);
+    li.innerHTML = '<a onclick="getClickedRecipe(' + i + ');recipeActive();">' + myArray[i].Food + '</a>';
 
-    // document.getElementsByTagName('li')[0].innerHTML += '<a href="'+test+'">'+desiredText+'</a>';
-
-
-
+    // li.insertAdjacentHTML("afterend", myArray[i].Food);
   }
 }
+
+
+
 
 
 ;
