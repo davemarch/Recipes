@@ -42,8 +42,16 @@ Method: ["Fry the garlic and chorizo", "Add onions, tumeric, rice and red pepper
   ;
 
 let welcomeMessage = () => {
-  alert("Hello Bug!")
-}
+  init();
+  if (document.getElementById("welcomeText"))
+  {   document.getElementById("welcomeText").remove(); 
+}  else {
+  let container = document.querySelector(".container");
+  let p = document.createElement("h1");
+  p.appendChild(document.createTextNode("testing"));
+  container.appendChild(p);
+  p.innerHTML = '<h1 class="welcomeText" id="welcomeText">Welcome to the recipe web app!</h1>';
+}};
 
 
 let dropdownActive = () => {
@@ -54,6 +62,12 @@ let dropdownActive = () => {
   let menuItemRemoveActive = () => {
     let dropdown = document.getElementById("dropdownID");
     dropdown.classList.toggle('active'); 
+    
+    if (document.getElementById("welcomeText"))
+  {   document.getElementById("welcomeText").remove(); 
+}
+
+
   }
 
   let burgerAnimation = () => {
@@ -85,7 +99,6 @@ function init(){
 
 clearList();
 document.getElementById("foodIndex").classList.add('hideIndex');
-
 document.getElementById('picture').src = '';
 document.getElementById('food').textContent = '';
 
