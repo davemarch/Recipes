@@ -51,6 +51,7 @@ border: none;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    width: 25%;
     /* z-index: 2; */
 
 }

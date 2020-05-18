@@ -44,10 +44,10 @@ Method: ["Fry the garlic and chorizo", "Add onions, tumeric, rice and red pepper
 let welcomeMessage = () => {
   init();
   if (document.getElementById("welcomeText"))
-  {   document.getElementById("welcomeText").remove(); 
+  {   document.getElementById("welcomeText"); 
 }  else {
   let container = document.querySelector(".container");
-  let p = document.createElement("h1");
+  let p = document.createElement("div");
   p.appendChild(document.createTextNode("testing"));
   container.appendChild(p);
   p.innerHTML = '<h1 class="welcomeText" id="welcomeText">Welcome to the recipe web app!</h1>';
@@ -62,7 +62,7 @@ let dropdownActive = () => {
   let menuItemRemoveActive = () => {
     let dropdown = document.getElementById("dropdownID");
     dropdown.classList.toggle('active'); 
-    
+
     if (document.getElementById("welcomeText"))
   {   document.getElementById("welcomeText").remove(); 
 }
@@ -205,8 +205,6 @@ function loadIndex() {
     li.appendChild(document.createTextNode(myArray[i].Food));
     ul.appendChild(li);
     li.innerHTML = '<a onclick="getClickedRecipe(' + i + ');recipeActive();">' + myArray[i].Food + '</a>';
-
-    // li.insertAdjacentHTML("afterend", myArray[i].Food);
   }
 }
 
