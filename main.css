@@ -6,6 +6,16 @@
     font-weight: 100;
 }
 
+::selection {
+    color: none;
+    background: none;
+}
+/* For Mozilla Firefox */
+::-moz-selection {
+    color: none;
+    background: none;
+}
+
 .container {
     position: relative;
     height: 100vh;
@@ -24,6 +34,13 @@ h2 {
 p {
     font-size: 0.5em;
 }
+
+#picture {
+    height: auto;
+    width: 100%;
+}
+
+
 
 input[type="submit"],
 button {
@@ -52,18 +69,22 @@ border: none;
     top: 50%;
     transform: translateY(-50%);
     width: 25%;
-    /* z-index: 2; */
-
+    cursor: pointer;
 }
 
 
 .menu-button {
     position: absolute;
     width: 10%;
+    max-width: 60px;
     top: 50%;
     transform: translateY(-50%);
     right: 16px;
     z-index: 2;
+    padding: 5px;
+    height: 40px;
+    display: block;
+    background-color: transparent;
 }
 
 .menu-button:focus {
@@ -71,7 +92,7 @@ border: none;
 }
 
 .menu-button .line {
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
@@ -116,12 +137,12 @@ border: none;
 }
 
 .dropdown {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 100px);
     background: black;
     opacity: 0.9;
     transition: ease 0.4s;
@@ -129,6 +150,8 @@ border: none;
     text-align: center;
     top: -100vh;
     list-style-type: none;
+    cursor: pointer;
+
 }
 
 .dropdown a {
@@ -144,24 +167,42 @@ a:visited {
     transition: ease 0.4s;
     opacity: 1;
     color: white;
-    padding: 20% 0;
+    padding: 100px 0;
 
 }
 
-.welcomeText {
+#welcomeTextContainer {
     position: absolute;
-    top: 50%;
+    width: 90%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: blue;
+}
+
+.welcomeText {
+    width: 100%;
     color: red;
     text-align: center;
 }
 
+.imgGridContainer {
+    width: 33.3%;
+    height: 100px;
+    overflow: hidden;
+}
 
-
+.imgGridContainer img {
+    max-width: 100%;
+    border: 5px yellow solid;
+}
 
 .active {
-    top: 0;
+    /* top: 0; */
+    top: 100px;
 }
 
 .active li {
@@ -239,6 +280,8 @@ a:visited {
     height: calc(100vh - 100px);
     margin: 0;
     text-align: center;
+    cursor: pointer;
+
 }
 
 .hideIndex {
@@ -263,26 +306,6 @@ a:visited {
 }
 
 
-#about-img {
-    position: relative;
-    height: 150%;
-    border-radius: 15%;
-}
-
-#work-img {
-    position: relative;
-    height: auto;
-    width: 50%;
-    border-radius: 15%;
-}
-
-#contact-img {
-    position: relative;
-    height: auto;
-    width: 50%;
-    border-radius: 15%;
-}
-
 #recipe li{
 list-style-type: disc; 
 list-style-position: inside;
@@ -292,3 +315,30 @@ background-color: rgb(134, 131, 131);
 #method li{
     list-style-position: inside;
     }
+
+#indexMenuLi {
+    display: none;
+}
+
+.active #indexMenuLi  {
+    display: block;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+    .container {
+        position: relative;
+        height: 100vh;
+        width: auto;
+        font-size: 2em;
+    }
+
+    #picture {
+        height: auto;
+        width: 50%;
+    }
+
+
+}

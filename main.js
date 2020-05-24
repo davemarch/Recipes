@@ -48,10 +48,20 @@ let welcomeMessage = () => {
 }  else {
   let container = document.querySelector(".container");
   let p = document.createElement("div");
+  p.id = "welcomeTextContainer";
+  p.className ="row";
   p.appendChild(document.createTextNode("testing"));
   container.appendChild(p);
   p.innerHTML = '<h1 class="welcomeText" id="welcomeText">Welcome to the recipe web app!</h1>';
-}};
+
+  for (var i = 0; i < myArray.length; i++) {
+  let imgGridDiv = document.createElement("div");
+  imgGridDiv.className ="imgGridContainer";
+  imgGridDiv.appendChild(document.createTextNode("Image Grid Div"));
+  p.appendChild(imgGridDiv);
+  imgGridDiv.innerHTML = '<img class="imgGrid" id="imgGridId" src="' + myArray[i].Picture + '" onclick=document.getElementById("welcomeTextContainer").remove();getClickedRecipe('+i+');recipeActive();></img>';
+
+}}};
 
 
 let dropdownActive = () => {
@@ -62,11 +72,12 @@ let dropdownActive = () => {
   let menuItemRemoveActive = () => {
     let dropdown = document.getElementById("dropdownID");
     dropdown.classList.toggle('active'); 
+    let burger = document.getElementById("burger");
+    burger.classList.toggle('burger'); 
 
     if (document.getElementById("welcomeText"))
-  {   document.getElementById("welcomeText").remove(); 
+  {   document.getElementById("welcomeTextContainer").remove(); 
 }
-
 
   }
 
