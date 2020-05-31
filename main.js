@@ -53,31 +53,37 @@ let welcomeMessage = () => {
   p.appendChild(document.createTextNode("testing"));
   container.appendChild(p);
   p.innerHTML = '<h1 class="welcomeText" id="welcomeText">Welcome to the recipe web app!</h1>';
-
   for (var i = 0; i < myArray.length; i++) {
   let imgGridDiv = document.createElement("div");
   imgGridDiv.className ="imgGridContainer";
   imgGridDiv.appendChild(document.createTextNode(""));
   p.appendChild(imgGridDiv);
   // imgGridDiv.innerHTML = '<img class="imgGrid" id="imgGridId" src="' + myArray[i].Picture + '" onclick=document.getElementById("welcomeTextContainer").remove();getClickedRecipe('+i+');recipeActive();></img>';
-
   imgGridDiv.style.backgroundImage = "url("  + myArray[i].Picture + " )";
 
-  (function(index){
-    p.children[i].onclick = function(){
-      document.getElementById("welcomeTextContainer").remove();
-      getClickedRecipe(index - 1);
-      recipeActive();
-    }    
+
+}
+addOnclicks();
+}};
+
+
+let imgGridContainer = document.getElementsByClassName("imgGridContainer");
+
+let addOnclicks = () => {
+
+for (var i = 0; i < myArray.length; i++) {
+
+(function(index){
+  imgGridContainer[i].onclick = function(){
+    // alert(index);
+    getClickedRecipe(index);
+    recipeActive();
+    document.getElementById("welcomeTextContainer").remove();
+
+  }    
 })(i); 
-
-
-
-
-
-
-
-}}};
+};
+};
 
 
 let dropdownActive = () => {
