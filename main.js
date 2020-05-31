@@ -36,7 +36,28 @@ Method: ["Fry the garlic and chorizo", "Add onions, tumeric, rice and red pepper
   Food: "Montreal Steak Spice Blend",
   Recipe: ["2 Tbsp - Sea Salt", "2 Tbps - Black Peppercorns", "1 tsp - Caraway Seeds", "1 tsp - Coriander Seeds", "1 tsp - Cumin Seeds", "1 tsp - Fennel Seeds", " 1 tsp - Celery Seeds" ],
   Method: ["Blend together, one at a time to get consistency", "Add celery seeds at the end"]
-  }
+  },
+
+  {
+    Picture: "https://www.simplyrecipes.com/wp-content/uploads/2014/07/hard-boiled-eggs-horiz-800-600x400.jpg",
+    Food: "Boiled Eggs",
+    Recipe: ["2 Tbsp - Sea Salt", "2 Tbps - Black Peppercorns", "1 tsp - Caraway Seeds", "1 tsp - Coriander Seeds", "1 tsp - Cumin Seeds", "1 tsp - Fennel Seeds", " 1 tsp - Celery Seeds" ],
+    Method: ["Blend together, one at a time to get consistency", "Add celery seeds at the end"]
+    },
+
+    {
+      Picture: "https://www.simplyrecipes.com/wp-content/uploads/2014/07/grilled-corn-on-the-cob-vertical-600-600x856.jpg",
+      Food: "Corn on the Cob",
+      Recipe: ["2 Tbsp - Sea Salt", "2 Tbps - Black Peppercorns", "1 tsp - Caraway Seeds", "1 tsp - Coriander Seeds", "1 tsp - Cumin Seeds", "1 tsp - Fennel Seeds", " 1 tsp - Celery Seeds" ],
+      Method: ["Blend together, one at a time to get consistency", "Add celery seeds at the end"]
+      },
+
+      {
+        Picture: "https://www.simplyrecipes.com/wp-content/uploads/2018/07/Guacamole-LEAD-1-600x840.jpg",
+        Food: "Guacamole",
+        Recipe: ["2 Tbsp - Sea Salt", "2 Tbps - Black Peppercorns", "1 tsp - Caraway Seeds", "1 tsp - Coriander Seeds", "1 tsp - Cumin Seeds", "1 tsp - Fennel Seeds", " 1 tsp - Celery Seeds" ],
+        Method: ["Blend together, one at a time to get consistency", "Add celery seeds at the end"]
+        },
 
 ]
   ;
