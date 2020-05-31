@@ -180,24 +180,33 @@ a:visited {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .welcomeText {
     width: 100%;
-    color: red;
     text-align: center;
+    padding: 10%;
 }
 
 .imgGridContainer {
     width: 33.3%;
     height: 100px;
     overflow: hidden;
+
 }
 
 .imgGridContainer img {
     max-width: 100%;
-    border: 5px yellow solid;
+    object-fit: fill;
+}
+
+.imgGridContainer {
+    /* border: red 1px solid; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
 .active {
@@ -338,6 +347,7 @@ background-color: rgb(134, 131, 131);
     #picture {
         height: auto;
         width: 50%;
+
     }
 
 
