@@ -59,6 +59,12 @@ const myArray = [
           Recipe: ["2 Tbsp - Sea Salt", "2 Tbps - Black Peppercorns", "1 tsp - Caraway Seeds", "1 tsp - Coriander Seeds", "1 tsp - Cumin Seeds", "1 tsp - Fennel Seeds", " 1 tsp - Celery Seeds" ],
           Method: ["Blend together, one at a time to get consistency", "Add celery seeds at the end"]
           },
+          {
+            Picture: "https://img1.jamieoliver.com/jamieoliver/recipe-database/oldImages/xtra_med/188_1_1436788980.jpg?tr=w-400",
+            Food: "Rogan Josh Curry Paste",
+            Recipe: ["2 Cloves of Garlic", "5cm piece of Ginger", "75g Jarred Peppers", "1 Tbs - Paprika", "2 tsp - Garam Masala", "1 tsp - Turmeric", "2 Tbs - Groundnut Oil", "2 Tbs Tomato Puree", "1 fresh red chilli", "15g fresh coriander", "2 tsp cumin seeds - toasted", "2 tsp coriander seeds - toasted", "1 tsp black peppercorns - toasted", "salt to taste" ],
+            Method: ["Blend dry ingredients", "add wet ingredients until smooth paste", "to cook, add paste, one onion and one can of chopped tomatoes"]
+            },
   
   ]
     ;
