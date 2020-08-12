@@ -16,7 +16,6 @@ let welcomeMessage = () => {
   imgGridDiv.className ="imgGridContainer";
   imgGridDiv.appendChild(document.createTextNode(""));
   p.appendChild(imgGridDiv);
-  // imgGridDiv.innerHTML = '<img class="imgGrid" id="imgGridId" src="' + myArray[i].Picture + '" onclick=document.getElementById("welcomeTextContainer").remove();getClickedRecipe('+i+');recipeActive();></img>';
   imgGridDiv.style.backgroundImage = "url("  + myArray[i].Picture + " )";
 
 

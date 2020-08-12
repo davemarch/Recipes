@@ -60,11 +60,22 @@ const myArray = [
           Method: ["Blend together, one at a time to get consistency", "Add celery seeds at the end"]
           },
           {
-            Picture: "https://img1.jamieoliver.com/jamieoliver/recipe-database/oldImages/xtra_med/188_1_1436788980.jpg?tr=w-400",
+            Picture: "https://img.jamieoliver.com/jamieoliver/recipe-database/oldImages/large/188_1_1436788980.jpg?tr=w-800,h-1066",
             Food: "Rogan Josh Curry Paste",
             Recipe: ["2 Cloves of Garlic", "5cm piece of Ginger", "75g Jarred Peppers", "1 Tbs - Paprika", "2 tsp - Garam Masala", "1 tsp - Turmeric", "2 Tbs - Groundnut Oil", "2 Tbs Tomato Puree", "1 fresh red chilli", "15g fresh coriander", "2 tsp cumin seeds - toasted", "2 tsp coriander seeds - toasted", "1 tsp black peppercorns - toasted", "salt to taste" ],
             Method: ["Blend dry ingredients", "add wet ingredients until smooth paste", "to cook, add paste, one onion and one can of chopped tomatoes"]
             },
-  
+            {
+              Picture: "https://cdn.apartmenttherapy.info/image/upload/v1579298800/k/Photo/Recipes/2020-01-How-to-Sourdough-Bread/98877-sliced-lead_How-to-make-sourdough-bread.jpg",
+              Food: "Sourdough Bread",
+              Recipe: ["Flour - 450g", "Starter - 165g", "Sugar - 1/2 Tbsp", "1 3/4 tsp - Salt", "265g - Water"],
+              Method: ["Mix everything but salt in breadmaker for 10 minutes", "Stop Mix, Add Salt and let sit for 30 minutes", "Mix again for 90 minutes", "Let sit for 90-120 minutes", "Mix until ball is formed", "Tip out and shape", "Overnight in fridge", "220c oven", "20 minutes - lid on", "20 minutes - lid off", "10 minutes - pizza stone"]
+              },
+              {
+                Picture: "https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/recipe_legacy/1234-3-large.jpg?itok=H5UL25eY",
+                Food: "Sourdough Pizza",
+                Recipe: ["Flour - 298g", "Unfed Starter - 227g", "Instant Yeast - 1/2 Tsp", "1 tsp - Salt", "113g - Water"],
+                Method: ["Mix everything in breadmaker for 7 minutes", "Stop Mix, put into ball and put in bowl", "Rest for 2-4 hours", "Divide in 2, make bases and rest for 15 mins", "2 Tbsp of sauce", " into oven at 230c for 5 minutes", "add cheese and nake for further 7-8 minutes", "rest before serving" ]
+                },
   ]
     ;
