@@ -107,7 +107,9 @@ function init(){
 
 clearList();
 document.getElementById("foodIndex").classList.add('hideIndex');
-document.getElementById('picture').src = '';
+document.getElementById('picture').style.backgroundImage = "url()";
+document.getElementById('picture').style.height = 0;
+
 document.getElementById('food').textContent = '';
 
     var ul = document.getElementById("recipe");
@@ -155,7 +157,7 @@ for (var i = 0; i < methodArrayLength; i++) {
 const getPicture = myArray[randomNumber].Picture;
 const getFood = myArray[randomNumber].Food;
 
-document.getElementById('picture').src = getPicture;
+document.getElementById('picture').style.backgroundImage = "url("  + getPicture + " )";
 document.getElementById('food').textContent = "You have randomly selected - " + getFood;
   
 };
@@ -185,7 +187,7 @@ for (var i = 0; i < methodArrayLength; i++) {
 const getPicture = myArray[randomNumber].Picture;
 const getFood = myArray[randomNumber].Food;
 
-document.getElementById('picture').src = getPicture;
+document.getElementById('picture').style.backgroundImage = "url("  + getPicture + " )";
 document.getElementById('food').textContent = "You have selected - " + getFood + " from the index";
   
 };

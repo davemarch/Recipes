@@ -36,8 +36,13 @@ p {
 }
 
 #picture {
-    height: auto;
-    width: 100%;
+
+        width: 100%;
+        min-height: 50vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
 }
 
 
@@ -270,6 +275,7 @@ a:visited {
     display: none;
 }
 
+
 .showRecipe{
     display: block;
     position: relative;
@@ -356,10 +362,7 @@ background-color: rgb(134, 131, 131);
         font-size: 2em;
     }
 
-    #picture {
-        height: auto;
-        width: 50%;
-    }
+
 
 
 
@@ -374,7 +377,6 @@ background-color: rgb(134, 131, 131);
         transform: scale(0.95); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
       }
 
-    /* Bottom right text */
     .imgGridContainerText {
         position: absolute;
         bottom: 0;
@@ -395,6 +397,28 @@ background-color: rgb(134, 131, 131);
         transition: transform .2s; /* Animation */
       }
 
+      #recipeContent {
+        display: flex;
+        flex-flow: row wrap;
+    }  
 
+    #picture {
+        width: 50%;
+        min-height: 50vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #recipeText {
+        width: 50%;
+    }
+
+    #method {
+    }
+
+    #food {
+        width: 100%;
+    }
 
 }
