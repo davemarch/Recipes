@@ -18,7 +18,7 @@ let welcomeMessage = () => {
   p.appendChild(imgGridDiv);
   imgGridDiv.style.animation = "fadein 2s";
   imgGridDiv.style.animationDelay = i/10 + 's';
-  imgGridDiv.style.animationPlayState = "initial"
+  imgGridDiv.style.animationFillMode = "forwards";
   imgGridDiv.style.backgroundImage = "url("  + myArray[i].Picture + " )";
 
 
