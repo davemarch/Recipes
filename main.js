@@ -16,7 +16,12 @@ let welcomeMessage = () => {
   imgGridDiv.className ="imgGridContainer";
   imgGridDiv.appendChild(document.createTextNode(""));
   p.appendChild(imgGridDiv);
+  imgGridDiv.style.animation = "fadein 2s";
+  imgGridDiv.style.animationDelay = i/10 + 's';
+  imgGridDiv.style.animationPlayState = "initial"
   imgGridDiv.style.backgroundImage = "url("  + myArray[i].Picture + " )";
+
+
 
 ///// TESTING ////////
   let imgGridP = document.createElement("p");
@@ -24,9 +29,6 @@ let welcomeMessage = () => {
   imgGridP.appendChild(document.createTextNode(""));
   imgGridDiv.appendChild(imgGridP);
   imgGridP.innerHTML = '<h1>' + myArray[i].Food + '</h1>';
-
-
-
 
 
 

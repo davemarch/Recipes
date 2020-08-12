@@ -197,6 +197,7 @@ a:visited {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    opacity: 0;
 }
 
 .imgGridContainer img {
@@ -341,6 +342,11 @@ background-color: rgb(134, 131, 131);
 
   }
 
+  @keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
 @media only screen and (min-width: 600px) {
 
     .container {
@@ -355,16 +361,18 @@ background-color: rgb(134, 131, 131);
         width: 50%;
     }
 
-    #welcomeTextContainer {
-        border: red 1px solid;
-        /* max-width: 60%; */
-    }
+
 
     .imgGridContainer {
         position: relative;
-        border: blue 1px solid;
         height: 300px;
+        transition: transform .2s; /* Animation */
+
     }
+
+    .imgGridContainer:hover {
+        transform: scale(0.95); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
 
     /* Bottom right text */
     .imgGridContainerText {
@@ -380,7 +388,13 @@ background-color: rgb(134, 131, 131);
   }
 
     .welcomeText {
-        color: red;
+        padding: 1%;
     }
+
+    .zoom {
+        transition: transform .2s; /* Animation */
+      }
+
+
 
 }
