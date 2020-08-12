@@ -18,6 +18,17 @@ let welcomeMessage = () => {
   p.appendChild(imgGridDiv);
   imgGridDiv.style.backgroundImage = "url("  + myArray[i].Picture + " )";
 
+///// TESTING ////////
+  let imgGridP = document.createElement("p");
+  imgGridP.className ="imgGridContainerText";
+  imgGridP.appendChild(document.createTextNode(""));
+  imgGridDiv.appendChild(imgGridP);
+  imgGridP.innerHTML = '<h1>' + myArray[i].Food + '</h1>';
+
+
+
+
+
 
 }
 addOnclicks();
@@ -46,6 +57,11 @@ for (var i = 0; i < myArray.length; i++) {
 let dropdownActive = () => {
     let dropdown = document.getElementById("dropdownID");
     dropdown.classList.toggle('active'); 
+  }
+
+  let dropdownClear = () => {
+    let dropdown = document.getElementById("dropdownID");
+    dropdown.classList.remove('active'); 
   }
 
   let menuItemRemoveActive = () => {
